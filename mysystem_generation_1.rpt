@@ -1,0 +1,676 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=/home/apunj/Desktop/EEC181/lab3/ --output-directory=/home/apunj/Desktop/EEC181/lab3/mysystem/simulation/ --file-set=SIM_VERILOG --report-file=html:/home/apunj/Desktop/EEC181/lab3/mysystem.html --report-file=sopcinfo:/home/apunj/Desktop/EEC181/lab3/mysystem.sopcinfo --report-file=csv:/home/apunj/Desktop/EEC181/lab3/mysystem.csv --report-file=spd:/home/apunj/Desktop/EEC181/lab3/mysystem.spd --report-file=sip:/home/apunj/Desktop/EEC181/lab3/mysystem/simulation/mysystem.sip --report-file=cmp:/home/apunj/Desktop/EEC181/lab3/mysystem.cmp --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=/home/apunj/Desktop/EEC181/lab3/mysystem.qsys
+Progress: Loading lab3/mysystem.qsys
+Progress: Reading input file
+Progress: Adding system_pll [altera_up_avalon_sys_sdram_pll 13.1]
+Progress: Parameterizing module system_pll
+Progress: Adding arm_a9_hps [altera_hps 13.1]
+Progress: Parameterizing module arm_a9_hps
+Progress: Adding Onchip_SRAM [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module Onchip_SRAM
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding vgasystem_0 [vgasystem 1.0]
+Progress: Parameterizing module vgasystem_0
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module SDRAM
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mysystem.vgasystem_0.VGA_Pixel_RGB_Resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: mysystem.vgasystem_0.VGA_Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: mysystem.vgasystem_0.VGA_Char_Buffer: Character Resolution: 80 x 60
+Info: mysystem.vgasystem_0.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: mysystem: Generating mysystem "mysystem" for SIM_VERILOG
+Info: pipeline_bridge_swap_transform: After transform: 6 modules, 27 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 5 modules, 18 connections
+Info: merlin_translator_transform: After transform: 10 modules, 38 connections
+Info: merlin_domain_transform: After transform: 25 modules, 129 connections
+Info: merlin_router_transform: After transform: 32 modules, 155 connections
+Info: merlin_traffic_limiter_transform: After transform: 35 modules, 168 connections
+Info: merlin_burst_transform: After transform: 39 modules, 184 connections
+Info: merlin_network_to_switch_transform: After transform: 52 modules, 219 connections
+Info: merlin_width_transform: After transform: 66 modules, 269 connections
+Info: limiter_update_transform: After transform: 66 modules, 272 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 70 modules, 341 connections
+Info: merlin_hierarchy_transform: After transform: 7 modules, 34 connections
+Info: merlin_initial_interconnect_transform: After transform: 4 modules, 10 connections
+Info: merlin_translator_transform: After transform: 7 modules, 22 connections
+Info: merlin_domain_transform: After transform: 18 modules, 87 connections
+Info: merlin_router_transform: After transform: 23 modules, 105 connections
+Info: merlin_traffic_limiter_transform: After transform: 25 modules, 113 connections
+Info: merlin_burst_transform: After transform: 28 modules, 125 connections
+Info: merlin_network_to_switch_transform: After transform: 37 modules, 150 connections
+Info: limiter_update_transform: After transform: 37 modules, 152 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 41 modules, 191 connections
+Info: merlin_hierarchy_transform: After transform: 8 modules, 41 connections
+Info: merlin_mm_transform: After transform: 8 modules, 41 connections
+Warning: arm_a9_hps.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: arm_a9_hps.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: arm_a9_hps.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: arm_a9_hps.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: merlin_interrupt_mapper_transform: After transform: 10 modules, 43 connections
+Info: reset_adaptation_transform: After transform: 14 modules, 48 connections
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 1 connections
+Info: No custom instruction connections, skipping transform 
+Info: system_pll: "mysystem" instantiated altera_up_avalon_sys_sdram_pll "system_pll"
+Info: arm_a9_hps: "Doing Pretransform for module: arm_a9_hps"
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: arm_a9_hps: "mysystem" instantiated altera_hps "arm_a9_hps"
+Info: Onchip_SRAM: Starting RTL generation for module 'mysystem_Onchip_SRAM'
+Info: Onchip_SRAM:   Generation command is [exec /software/altera/quartus-13.1/quartus/linux/perl/bin/perl -I /software/altera/quartus-13.1/quartus/linux/perl/lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/europa -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/perl_lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/common -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=mysystem_Onchip_SRAM --dir=/tmp/alt6458_2651839717824695766.dir/0001_Onchip_SRAM_gen/ --quartus_dir=/software/altera/quartus-13.1/quartus --verilog --config=/tmp/alt6458_2651839717824695766.dir/0001_Onchip_SRAM_gen//mysystem_Onchip_SRAM_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt6458_2651839717824695766.dir/0001_Onchip_SRAM_gen/  ]
+Info: Onchip_SRAM: Done RTL generation for module 'mysystem_Onchip_SRAM'
+Info: Onchip_SRAM: "mysystem" instantiated altera_avalon_onchip_memory2 "Onchip_SRAM"
+Info: jtag_uart: Starting RTL generation for module 'mysystem_jtag_uart'
+Info: jtag_uart:   Generation command is [exec /software/altera/quartus-13.1/quartus/linux/perl/bin/perl -I /software/altera/quartus-13.1/quartus/linux/perl/lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/europa -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/perl_lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/common -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=mysystem_jtag_uart --dir=/tmp/alt6458_2651839717824695766.dir/0002_jtag_uart_gen/ --quartus_dir=/software/altera/quartus-13.1/quartus --verilog --config=/tmp/alt6458_2651839717824695766.dir/0002_jtag_uart_gen//mysystem_jtag_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt6458_2651839717824695766.dir/0002_jtag_uart_gen/  ]
+Info: jtag_uart: Done RTL generation for module 'mysystem_jtag_uart'
+Info: jtag_uart: "mysystem" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: pipeline_bridge_swap_transform: After transform: 10 modules, 27 connections
+Info: No custom instruction connections, skipping transform 
+Info: reset_adaptation_transform: After transform: 12 modules, 31 connections
+Info: vgasystem_0: "mysystem" instantiated vgasystem "vgasystem_0"
+Info: SDRAM: Starting RTL generation for module 'mysystem_SDRAM'
+Info: SDRAM:   Generation command is [exec /software/altera/quartus-13.1/quartus/linux/perl/bin/perl -I /software/altera/quartus-13.1/quartus/linux/perl/lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/europa -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/perl_lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/common -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=mysystem_SDRAM --dir=/tmp/alt6458_2651839717824695766.dir/0003_SDRAM_gen/ --quartus_dir=/software/altera/quartus-13.1/quartus --verilog --config=/tmp/alt6458_2651839717824695766.dir/0003_SDRAM_gen//mysystem_SDRAM_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt6458_2651839717824695766.dir/0003_SDRAM_gen/  ]
+Info: SDRAM: Done RTL generation for module 'mysystem_SDRAM'
+Info: SDRAM: "mysystem" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: pipeline_bridge_swap_transform: After transform: 65 modules, 210 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: mm_interconnect_0: "mysystem" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: pipeline_bridge_swap_transform: After transform: 37 modules, 120 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 37 modules, 120 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 37 modules, 120 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 37 modules, 120 connections
+Info: mm_interconnect_1: "mysystem" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_1"
+Info: irq_mapper: "mysystem" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_mapper_001: "mysystem" instantiated altera_irq_mapper "irq_mapper_001"
+Info: rst_controller: "mysystem" instantiated altera_reset_controller "rst_controller"
+Info: sys_pll: Generating simgen model
+Info: sys_pll: Info: *******************************************************************
+Info: Running Quartus II 32-bit Shell
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Thu Jan 22 17:35:45 2015
+Info: Command: quartus_sh -t run_simgen_cmd.tcl
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Thu Jan 22 17:35:55 2015
+Info: Command: quartus_map mysystem_system_pll_sys_pll.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG
+Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file mysystem_system_pll_sys_pll.v
+    Info (12023): Found entity 1: mysystem_system_pll_sys_pll
+Info (12127): Elaborating entity "mysystem_system_pll_sys_pll" for the top level hierarchy
+Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i"
+Warning (10036): Verilog HDL or VHDL warning at altera_pll.v(398): object "cntsel_temp" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at altera_pll.v(400): object "gnd" assigned a value but never read
+Warning (10034): Output port "lvds_clk" at altera_pll.v(295) has no driver
+Warning (10034): Output port "loaden" at altera_pll.v(296) has no driver
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i"
+Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter:
+    Info (12134): Parameter "fractional_vco_multiplier" = "false"
+    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+    Info (12134): Parameter "operation_mode" = "direct"
+    Info (12134): Parameter "number_of_clocks" = "2"
+    Info (12134): Parameter "output_clock_frequency0" = "50.000000 MHz"
+    Info (12134): Parameter "phase_shift0" = "0 ps"
+    Info (12134): Parameter "duty_cycle0" = "50"
+    Info (12134): Parameter "output_clock_frequency1" = "50.000000 MHz"
+    Info (12134): Parameter "phase_shift1" = "15000 ps"
+    Info (12134): Parameter "duty_cycle1" = "50"
+    Info (12134): Parameter "output_clock_frequency2" = "0 MHz"
+    Info (12134): Parameter "phase_shift2" = "0 ps"
+    Info (12134): Parameter "duty_cycle2" = "50"
+    Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
+    Info (12134): Parameter "phase_shift3" = "0 ps"
+    Info (12134): Parameter "duty_cycle3" = "50"
+    Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
+    Info (12134): Parameter "phase_shift4" = "0 ps"
+    Info (12134): Parameter "duty_cycle4" = "50"
+    Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
+    Info (12134): Parameter "phase_shift5" = "0 ps"
+    Info (12134): Parameter "duty_cycle5" = "50"
+    Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
+    Info (12134): Parameter "phase_shift6" = "0 ps"
+    Info (12134): Parameter "duty_cycle6" = "50"
+    Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
+    Info (12134): Parameter "phase_shift7" = "0 ps"
+    Info (12134): Parameter "duty_cycle7" = "50"
+    Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
+    Info (12134): Parameter "phase_shift8" = "0 ps"
+    Info (12134): Parameter "duty_cycle8" = "50"
+    Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
+    Info (12134): Parameter "phase_shift9" = "0 ps"
+    Info (12134): Parameter "duty_cycle9" = "50"
+    Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
+    Info (12134): Parameter "phase_shift10" = "0 ps"
+    Info (12134): Parameter "duty_cycle10" = "50"
+    Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
+    Info (12134): Parameter "phase_shift11" = "0 ps"
+    Info (12134): Parameter "duty_cycle11" = "50"
+    Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
+    Info (12134): Parameter "phase_shift12" = "0 ps"
+    Info (12134): Parameter "duty_cycle12" = "50"
+    Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
+    Info (12134): Parameter "phase_shift13" = "0 ps"
+    Info (12134): Parameter "duty_cycle13" = "50"
+    Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
+    Info (12134): Parameter "phase_shift14" = "0 ps"
+    Info (12134): Parameter "duty_cycle14" = "50"
+    Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
+    Info (12134): Parameter "phase_shift15" = "0 ps"
+    Info (12134): Parameter "duty_cycle15" = "50"
+    Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
+    Info (12134): Parameter "phase_shift16" = "0 ps"
+    Info (12134): Parameter "duty_cycle16" = "50"
+    Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
+    Info (12134): Parameter "phase_shift17" = "0 ps"
+    Info (12134): Parameter "duty_cycle17" = "50"
+    Info (12134): Parameter "pll_type" = "General"
+    Info (12134): Parameter "pll_subtype" = "General"
+Info (281010): Generating sgate simulator netlist using Simgen
+SIMGEN_PROGRESS Start of Model generation -- 0% complete
+SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete
+SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete
+SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 750 megabytes
+    Info: Processing ended: Thu Jan 22 17:36:06 2015
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:02
+Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful
+Info: Quartus II 32-bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 141 megabytes
+    Info: Processing ended: Thu Jan 22 17:36:06 2015
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:05
+Info: sys_pll: Simgen was successful
+Info: sys_pll: "system_pll" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "system_pll" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: fpga_interfaces: "arm_a9_hps" instantiated altera_interface_generator "fpga_interfaces"
+Info: pipeline_bridge_swap_transform: After transform: 1 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: hps_io: "arm_a9_hps" instantiated altera_hps_io "hps_io"
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 1 connections
+Info: No custom instruction connections, skipping transform 
+Info: vga_pll: "vgasystem_0" instantiated altera_up_avalon_video_pll "vga_pll"
+Info: VGA_Pixel_DMA: Starting Generation of VGA Pixel Buffer
+Info: VGA_Pixel_DMA: "vgasystem_0" instantiated altera_up_avalon_video_pixel_buffer_dma "VGA_Pixel_DMA"
+Info: VGA_Pixel_FIFO: Starting Generation of the Dual Clock Buffer
+Info: VGA_Pixel_FIFO: "vgasystem_0" instantiated altera_up_avalon_video_dual_clock_buffer "VGA_Pixel_FIFO"
+Info: VGA_Pixel_RGB_Resampler_0: Starting Generation of Video RGB Resampler
+Info: VGA_Pixel_RGB_Resampler_0: "vgasystem_0" instantiated altera_up_avalon_video_rgb_resampler "VGA_Pixel_RGB_Resampler_0"
+Info: VGA_Pixel_Scaler: Starting Generation of Video Scaler
+Info: VGA_Pixel_Scaler: "vgasystem_0" instantiated altera_up_avalon_video_scaler "VGA_Pixel_Scaler"
+Info: VGA_Char_Buffer: Starting Generation of Character Buffer
+Info: VGA_Char_Buffer: "vgasystem_0" instantiated altera_up_avalon_video_character_buffer_with_dma "VGA_Char_Buffer"
+Info: VGA_Alpha_Blender: Starting Generation of the Alpha Blender
+Info: VGA_Alpha_Blender: "vgasystem_0" instantiated altera_up_avalon_video_alpha_blender "VGA_Alpha_Blender"
+Info: VGA_Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info: VGA_Dual_Clock_FIFO: "vgasystem_0" instantiated altera_up_avalon_video_dual_clock_buffer "VGA_Dual_Clock_FIFO"
+Info: VGA_Controller: Starting Generation of VGA Controller
+Info: VGA_Controller: "vgasystem_0" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info: vgasystem_0_pixel_dma_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "vgasystem_0_pixel_dma_master_translator"
+Info: Onchip_SRAM_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "Onchip_SRAM_s1_translator"
+Info: arm_a9_hps_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "arm_a9_hps_h2f_axi_master_agent"
+Info: vgasystem_0_pixel_dma_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "vgasystem_0_pixel_dma_master_translator_avalon_universal_master_0_agent"
+Info: Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent"
+Info: Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_002: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "mm_interconnect_0" instantiated altera_merlin_router "id_router_001"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "mm_interconnect_0" instantiated altera_merlin_router "id_router_003"
+Info: limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "limiter"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_avalon_sc_fifo.v
+Info: burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_address_alignment.sv
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_001"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_003"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_001"
+Info: rsp_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_002"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: addr_router: "mm_interconnect_1" instantiated altera_merlin_router "addr_router"
+Info: id_router: "mm_interconnect_1" instantiated altera_merlin_router "id_router"
+Info: cmd_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_merlin_arbitrator.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/verbosity_pkg.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/avalon_utilities_pkg.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/avalon_mm_pkg.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_avalon_mm_slave_bfm.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_avalon_interrupt_sink.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_avalon_clock_source.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/submodules/altera_avalon_reset_source.sv
+Info: video_pll: Generating simgen model
+Info: video_pll: Info: *******************************************************************
+Info: Running Quartus II 32-bit Shell
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Thu Jan 22 17:36:20 2015
+Info: Command: quartus_sh -t run_simgen_cmd.tcl
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Thu Jan 22 17:36:27 2015
+Info: Command: quartus_map mysystem_vgasystem_0_vga_pll_video_pll.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG
+Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file mysystem_vgasystem_0_vga_pll_video_pll.v
+    Info (12023): Found entity 1: mysystem_vgasystem_0_vga_pll_video_pll
+Info (12127): Elaborating entity "mysystem_vgasystem_0_vga_pll_video_pll" for the top level hierarchy
+Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i"
+Warning (10036): Verilog HDL or VHDL warning at altera_pll.v(398): object "cntsel_temp" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at altera_pll.v(400): object "gnd" assigned a value but never read
+Warning (10034): Output port "lvds_clk" at altera_pll.v(295) has no driver
+Warning (10034): Output port "loaden" at altera_pll.v(296) has no driver
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i"
+Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter:
+    Info (12134): Parameter "fractional_vco_multiplier" = "false"
+    Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+    Info (12134): Parameter "operation_mode" = "direct"
+    Info (12134): Parameter "number_of_clocks" = "3"
+    Info (12134): Parameter "output_clock_frequency0" = "25.000000 MHz"
+    Info (12134): Parameter "phase_shift0" = "0 ps"
+    Info (12134): Parameter "duty_cycle0" = "50"
+    Info (12134): Parameter "output_clock_frequency1" = "25.000000 MHz"
+    Info (12134): Parameter "phase_shift1" = "0 ps"
+    Info (12134): Parameter "duty_cycle1" = "50"
+    Info (12134): Parameter "output_clock_frequency2" = "33.000000 MHz"
+    Info (12134): Parameter "phase_shift2" = "0 ps"
+    Info (12134): Parameter "duty_cycle2" = "50"
+    Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
+    Info (12134): Parameter "phase_shift3" = "0 ps"
+    Info (12134): Parameter "duty_cycle3" = "50"
+    Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
+    Info (12134): Parameter "phase_shift4" = "0 ps"
+    Info (12134): Parameter "duty_cycle4" = "50"
+    Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
+    Info (12134): Parameter "phase_shift5" = "0 ps"
+    Info (12134): Parameter "duty_cycle5" = "50"
+    Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
+    Info (12134): Parameter "phase_shift6" = "0 ps"
+    Info (12134): Parameter "duty_cycle6" = "50"
+    Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
+    Info (12134): Parameter "phase_shift7" = "0 ps"
+    Info (12134): Parameter "duty_cycle7" = "50"
+    Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
+    Info (12134): Parameter "phase_shift8" = "0 ps"
+    Info (12134): Parameter "duty_cycle8" = "50"
+    Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
+    Info (12134): Parameter "phase_shift9" = "0 ps"
+    Info (12134): Parameter "duty_cycle9" = "50"
+    Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
+    Info (12134): Parameter "phase_shift10" = "0 ps"
+    Info (12134): Parameter "duty_cycle10" = "50"
+    Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
+    Info (12134): Parameter "phase_shift11" = "0 ps"
+    Info (12134): Parameter "duty_cycle11" = "50"
+    Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
+    Info (12134): Parameter "phase_shift12" = "0 ps"
+    Info (12134): Parameter "duty_cycle12" = "50"
+    Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
+    Info (12134): Parameter "phase_shift13" = "0 ps"
+    Info (12134): Parameter "duty_cycle13" = "50"
+    Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
+    Info (12134): Parameter "phase_shift14" = "0 ps"
+    Info (12134): Parameter "duty_cycle14" = "50"
+    Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
+    Info (12134): Parameter "phase_shift15" = "0 ps"
+    Info (12134): Parameter "duty_cycle15" = "50"
+    Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
+    Info (12134): Parameter "phase_shift16" = "0 ps"
+    Info (12134): Parameter "duty_cycle16" = "50"
+    Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
+    Info (12134): Parameter "phase_shift17" = "0 ps"
+    Info (12134): Parameter "duty_cycle17" = "50"
+    Info (12134): Parameter "pll_type" = "General"
+    Info (12134): Parameter "pll_subtype" = "General"
+Info (281010): Generating sgate simulator netlist using Simgen
+SIMGEN_PROGRESS Start of Model generation -- 0% complete
+SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete
+SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete
+SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 750 megabytes
+    Info: Processing ended: Thu Jan 22 17:36:36 2015
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:01
+Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful
+Info: Quartus II 32-bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 141 megabytes
+    Info: Processing ended: Thu Jan 22 17:36:36 2015
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:05
+Info: video_pll: Simgen was successful
+Info: video_pll: "vga_pll" instantiated altera_pll "video_pll"
+Info: mysystem: Done "mysystem" with 60 modules, 91 files, 5892727 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/apunj/Desktop/EEC181/lab3/mysystem.spd --output-directory=/home/apunj/Desktop/EEC181/lab3/mysystem/simulation/
+Info: Doing: ip-make-simscript --spd=/home/apunj/Desktop/EEC181/lab3/mysystem.spd --output-directory=/home/apunj/Desktop/EEC181/lab3/mysystem/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	54 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/apunj/Desktop/EEC181/lab3/mysystem/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/apunj/Desktop/EEC181/lab3/ --output-directory=/home/apunj/Desktop/EEC181/lab3/mysystem/ --report-file=bsf:/home/apunj/Desktop/EEC181/lab3/mysystem.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=/home/apunj/Desktop/EEC181/lab3/mysystem.qsys
+Progress: Loading lab3/mysystem.qsys
+Progress: Reading input file
+Progress: Adding system_pll [altera_up_avalon_sys_sdram_pll 13.1]
+Progress: Parameterizing module system_pll
+Progress: Adding arm_a9_hps [altera_hps 13.1]
+Progress: Parameterizing module arm_a9_hps
+Progress: Adding Onchip_SRAM [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module Onchip_SRAM
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding vgasystem_0 [vgasystem 1.0]
+Progress: Parameterizing module vgasystem_0
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module SDRAM
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mysystem.vgasystem_0.VGA_Pixel_RGB_Resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: mysystem.vgasystem_0.VGA_Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: mysystem.vgasystem_0.VGA_Char_Buffer: Character Resolution: 80 x 60
+Info: mysystem.vgasystem_0.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/apunj/Desktop/EEC181/lab3/ --output-directory=/home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:/home/apunj/Desktop/EEC181/lab3/mysystem.html --report-file=sopcinfo:/home/apunj/Desktop/EEC181/lab3/mysystem.sopcinfo --report-file=cmp:/home/apunj/Desktop/EEC181/lab3/mysystem.cmp --report-file=qip:/home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/mysystem.qip --report-file=svd --report-file=regmap:/home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/mysystem.regmap --report-file=debuginfo:/home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/mysystem.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=/home/apunj/Desktop/EEC181/lab3/mysystem.qsys --language=VERILOG
+Progress: Loading lab3/mysystem.qsys
+Progress: Reading input file
+Progress: Adding system_pll [altera_up_avalon_sys_sdram_pll 13.1]
+Progress: Parameterizing module system_pll
+Progress: Adding arm_a9_hps [altera_hps 13.1]
+Progress: Parameterizing module arm_a9_hps
+Progress: Adding Onchip_SRAM [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module Onchip_SRAM
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding vgasystem_0 [vgasystem 1.0]
+Progress: Parameterizing module vgasystem_0
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module SDRAM
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: mysystem.vgasystem_0.VGA_Pixel_RGB_Resampler_0: RGB Resampling: 16 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: mysystem.vgasystem_0.VGA_Pixel_Scaler: Change in Resolution: 320 x 240 -> 640 x 480
+Info: mysystem.vgasystem_0.VGA_Char_Buffer: Character Resolution: 80 x 60
+Info: mysystem.vgasystem_0.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: mysystem: Generating mysystem "mysystem" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 6 modules, 27 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 5 modules, 18 connections
+Info: merlin_translator_transform: After transform: 10 modules, 38 connections
+Info: merlin_domain_transform: After transform: 25 modules, 129 connections
+Info: merlin_router_transform: After transform: 32 modules, 155 connections
+Info: merlin_traffic_limiter_transform: After transform: 35 modules, 168 connections
+Info: merlin_burst_transform: After transform: 39 modules, 184 connections
+Info: merlin_network_to_switch_transform: After transform: 52 modules, 219 connections
+Info: merlin_width_transform: After transform: 66 modules, 269 connections
+Info: limiter_update_transform: After transform: 66 modules, 272 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 70 modules, 341 connections
+Info: merlin_hierarchy_transform: After transform: 7 modules, 34 connections
+Info: merlin_initial_interconnect_transform: After transform: 4 modules, 10 connections
+Info: merlin_translator_transform: After transform: 7 modules, 22 connections
+Info: merlin_domain_transform: After transform: 18 modules, 87 connections
+Info: merlin_router_transform: After transform: 23 modules, 105 connections
+Info: merlin_traffic_limiter_transform: After transform: 25 modules, 113 connections
+Info: merlin_burst_transform: After transform: 28 modules, 125 connections
+Info: merlin_network_to_switch_transform: After transform: 37 modules, 150 connections
+Info: limiter_update_transform: After transform: 37 modules, 152 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 41 modules, 191 connections
+Info: merlin_hierarchy_transform: After transform: 8 modules, 41 connections
+Info: merlin_mm_transform: After transform: 8 modules, 41 connections
+Warning: arm_a9_hps.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: arm_a9_hps.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: arm_a9_hps.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: arm_a9_hps.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: merlin_interrupt_mapper_transform: After transform: 10 modules, 43 connections
+Info: reset_adaptation_transform: After transform: 14 modules, 48 connections
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 1 connections
+Info: No custom instruction connections, skipping transform 
+Info: system_pll: "mysystem" instantiated altera_up_avalon_sys_sdram_pll "system_pll"
+Info: arm_a9_hps: "Doing Pretransform for module: arm_a9_hps"
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: arm_a9_hps: "mysystem" instantiated altera_hps "arm_a9_hps"
+Info: Onchip_SRAM: Starting RTL generation for module 'mysystem_Onchip_SRAM'
+Info: Onchip_SRAM:   Generation command is [exec /software/altera/quartus-13.1/quartus/linux/perl/bin/perl -I /software/altera/quartus-13.1/quartus/linux/perl/lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/europa -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/perl_lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/common -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=mysystem_Onchip_SRAM --dir=/tmp/alt6458_2651839717824695766.dir/0053_Onchip_SRAM_gen/ --quartus_dir=/software/altera/quartus-13.1/quartus --verilog --config=/tmp/alt6458_2651839717824695766.dir/0053_Onchip_SRAM_gen//mysystem_Onchip_SRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: Onchip_SRAM: Done RTL generation for module 'mysystem_Onchip_SRAM'
+Info: Onchip_SRAM: "mysystem" instantiated altera_avalon_onchip_memory2 "Onchip_SRAM"
+Info: jtag_uart: Starting RTL generation for module 'mysystem_jtag_uart'
+Info: jtag_uart:   Generation command is [exec /software/altera/quartus-13.1/quartus/linux/perl/bin/perl -I /software/altera/quartus-13.1/quartus/linux/perl/lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/europa -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/perl_lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/common -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=mysystem_jtag_uart --dir=/tmp/alt6458_2651839717824695766.dir/0054_jtag_uart_gen/ --quartus_dir=/software/altera/quartus-13.1/quartus --verilog --config=/tmp/alt6458_2651839717824695766.dir/0054_jtag_uart_gen//mysystem_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'mysystem_jtag_uart'
+Info: jtag_uart: "mysystem" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: pipeline_bridge_swap_transform: After transform: 10 modules, 27 connections
+Info: No custom instruction connections, skipping transform 
+Info: reset_adaptation_transform: After transform: 12 modules, 31 connections
+Info: vgasystem_0: "mysystem" instantiated vgasystem "vgasystem_0"
+Info: SDRAM: Starting RTL generation for module 'mysystem_SDRAM'
+Info: SDRAM:   Generation command is [exec /software/altera/quartus-13.1/quartus/linux/perl/bin/perl -I /software/altera/quartus-13.1/quartus/linux/perl/lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/europa -I /software/altera/quartus-13.1/quartus/sopc_builder/bin/perl_lib -I /software/altera/quartus-13.1/quartus/sopc_builder/bin -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/common -I /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /software/altera/quartus-13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=mysystem_SDRAM --dir=/tmp/alt6458_2651839717824695766.dir/0055_SDRAM_gen/ --quartus_dir=/software/altera/quartus-13.1/quartus --verilog --config=/tmp/alt6458_2651839717824695766.dir/0055_SDRAM_gen//mysystem_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SDRAM: Done RTL generation for module 'mysystem_SDRAM'
+Info: SDRAM: "mysystem" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: pipeline_bridge_swap_transform: After transform: 65 modules, 210 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 210 connections
+Info: mm_interconnect_0: "mysystem" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: pipeline_bridge_swap_transform: After transform: 37 modules, 120 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 37 modules, 120 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 37 modules, 120 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 37 modules, 120 connections
+Info: mm_interconnect_1: "mysystem" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_1"
+Info: irq_mapper: "mysystem" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_mapper_001: "mysystem" instantiated altera_irq_mapper "irq_mapper_001"
+Info: rst_controller: "mysystem" instantiated altera_reset_controller "rst_controller"
+Info: sys_pll: "system_pll" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "system_pll" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: fpga_interfaces: "arm_a9_hps" instantiated altera_interface_generator "fpga_interfaces"
+Info: pipeline_bridge_swap_transform: After transform: 1 modules, 0 connections
+Info: No custom instruction connections, skipping transform 
+Info: hps_io: "arm_a9_hps" instantiated altera_hps_io "hps_io"
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 1 connections
+Info: No custom instruction connections, skipping transform 
+Info: vga_pll: "vgasystem_0" instantiated altera_up_avalon_video_pll "vga_pll"
+Info: VGA_Pixel_DMA: Starting Generation of VGA Pixel Buffer
+Info: VGA_Pixel_DMA: "vgasystem_0" instantiated altera_up_avalon_video_pixel_buffer_dma "VGA_Pixel_DMA"
+Info: VGA_Pixel_FIFO: Starting Generation of the Dual Clock Buffer
+Info: VGA_Pixel_FIFO: "vgasystem_0" instantiated altera_up_avalon_video_dual_clock_buffer "VGA_Pixel_FIFO"
+Info: VGA_Pixel_RGB_Resampler_0: Starting Generation of Video RGB Resampler
+Info: VGA_Pixel_RGB_Resampler_0: "vgasystem_0" instantiated altera_up_avalon_video_rgb_resampler "VGA_Pixel_RGB_Resampler_0"
+Info: VGA_Pixel_Scaler: Starting Generation of Video Scaler
+Info: VGA_Pixel_Scaler: "vgasystem_0" instantiated altera_up_avalon_video_scaler "VGA_Pixel_Scaler"
+Info: VGA_Char_Buffer: Starting Generation of Character Buffer
+Info: VGA_Char_Buffer: "vgasystem_0" instantiated altera_up_avalon_video_character_buffer_with_dma "VGA_Char_Buffer"
+Info: VGA_Alpha_Blender: Starting Generation of the Alpha Blender
+Info: VGA_Alpha_Blender: "vgasystem_0" instantiated altera_up_avalon_video_alpha_blender "VGA_Alpha_Blender"
+Info: VGA_Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info: VGA_Dual_Clock_FIFO: "vgasystem_0" instantiated altera_up_avalon_video_dual_clock_buffer "VGA_Dual_Clock_FIFO"
+Info: VGA_Controller: Starting Generation of VGA Controller
+Info: VGA_Controller: "vgasystem_0" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info: vgasystem_0_pixel_dma_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "vgasystem_0_pixel_dma_master_translator"
+Info: Onchip_SRAM_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "Onchip_SRAM_s1_translator"
+Info: arm_a9_hps_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "arm_a9_hps_h2f_axi_master_agent"
+Info: vgasystem_0_pixel_dma_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "vgasystem_0_pixel_dma_master_translator_avalon_universal_master_0_agent"
+Info: Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent"
+Info: Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "Onchip_SRAM_s1_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_002: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "mm_interconnect_0" instantiated altera_merlin_router "id_router_001"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "mm_interconnect_0" instantiated altera_merlin_router "id_router_003"
+Info: limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "limiter"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_001"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_002"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_003"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_001"
+Info: rsp_xbar_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_002"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: addr_router: "mm_interconnect_1" instantiated altera_merlin_router "addr_router"
+Info: id_router: "mm_interconnect_1" instantiated altera_merlin_router "id_router"
+Info: cmd_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file /home/apunj/Desktop/EEC181/lab3/mysystem/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: video_pll: "vga_pll" instantiated altera_pll "video_pll"
+Info: mysystem: Done "mysystem" with 60 modules, 121 files, 2768865 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

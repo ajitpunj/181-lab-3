@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_Onchip_SRAM:onchip_sram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_td92.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_jtag_uart:jtag_uart|mysystem_jtag_uart_scfifo_r:the_mysystem_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Char_Buffer:vga_char_buffer|altsyncram:Char_Buffer_Memory" CBX_FILE_NAME="altsyncram_6dd2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_arm_a9_hps:arm_a9_hps|mysystem_arm_a9_hps_hps_io:hps_io|mysystem_arm_a9_hps_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_p0:p0|hps_sdram_p0_acv_hard_memphy:umemphy|hps_sdram_p0_acv_hard_io_pads:uio_pads|hps_sdram_p0_acv_hard_addr_cmd_pads:uaddr_cmd_pads|altddio_out:clock_gen[0].umem_ck_pad" CBX_FILE_NAME="ddio_out_uqe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_jtag_uart:jtag_uart|mysystem_jtag_uart_scfifo_w:the_mysystem_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_3291.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Dual_Clock_FIFO:vga_dual_clock_fifo|dcfifo:Data_FIFO" CBX_FILE_NAME="dcfifo_73q1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Pixel_DMA:vga_pixel_dma|scfifo:Image_Buffer" CBX_FILE_NAME="scfifo_9bg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Pixel_FIFO:vga_pixel_fifo|dcfifo:Data_FIFO" CBX_FILE_NAME="dcfifo_f3q1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Pixel_Scaler:vga_pixel_scaler|altera_up_video_scaler_multiply_height:Multiply_Height|scfifo:Multiply_Height_FIFO" CBX_FILE_NAME="scfifo_so91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sdram_s1_translator_avalon_universal_slave_0_agent_rdata_fifo|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_40n1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Char_Buffer:vga_char_buffer|altera_up_video_128_character_rom:Character_Rom|altsyncram:character_data_rom" CBX_FILE_NAME="altsyncram_ggo1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

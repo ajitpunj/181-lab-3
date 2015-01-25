@@ -1,0 +1,90 @@
+
+State Machine - |lab3|mysystem:u0|mysystem_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:burst_adapter_002|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lab3|mysystem:u0|mysystem_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:burst_adapter_001|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lab3|mysystem:u0|mysystem_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:burst_adapter|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lab3|mysystem:u0|mysystem_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter_002|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lab3|mysystem:u0|mysystem_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter_001|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lab3|mysystem:u0|mysystem_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:burst_adapter|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |lab3|mysystem:u0|mysystem_SDRAM:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |lab3|mysystem:u0|mysystem_SDRAM:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |lab3|mysystem:u0|mysystem_SDRAM:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |lab3|mysystem:u0|mysystem_SDRAM:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Pixel_Scaler:vga_pixel_scaler|altera_up_video_scaler_multiply_height:Multiply_Height|s_multiply_height
+Name s_multiply_height.STATE_0_GET_CURRENT_LINE s_multiply_height.STATE_2_OUTPUT_LAST_LINE s_multiply_height.STATE_1_LOOP_FIFO 
+s_multiply_height.STATE_0_GET_CURRENT_LINE 0 0 0 
+s_multiply_height.STATE_1_LOOP_FIFO 1 0 1 
+s_multiply_height.STATE_2_OUTPUT_LAST_LINE 1 1 0 
+
+State Machine - |lab3|mysystem:u0|mysystem_vgasystem_0:vgasystem_0|mysystem_vgasystem_0_VGA_Pixel_DMA:vga_pixel_dma|s_pixel_buffer
+Name s_pixel_buffer.STATE_3_MAX_PENDING_READS_STALL s_pixel_buffer.STATE_2_READ_BUFFER s_pixel_buffer.STATE_1_WAIT_FOR_LAST_PIXEL s_pixel_buffer.STATE_0_IDLE 
+s_pixel_buffer.STATE_0_IDLE 0 0 0 0 
+s_pixel_buffer.STATE_1_WAIT_FOR_LAST_PIXEL 0 0 1 1 
+s_pixel_buffer.STATE_2_READ_BUFFER 0 1 0 1 
+s_pixel_buffer.STATE_3_MAX_PENDING_READS_STALL 1 0 0 1 
